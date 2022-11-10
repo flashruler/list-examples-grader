@@ -17,9 +17,9 @@ fi
 cd .. 
 echo "back in parent dir"
 
-javac -cp lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 echo "compiled"
 
-java -cp lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples
-
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples
 
