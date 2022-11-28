@@ -8,7 +8,7 @@ then
     cp -v ListExamples.java ../
 else 
     echo "incorrect file, please use the correct naming/formatting"
-    exit
+    exit 1
 fi
 cd .. 
 javac -cp $PTH *.java 2> compile_error.txt

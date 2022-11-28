@@ -1,6 +1,30 @@
 JUnit version 4.13.2
-.......
-Time: 0.013
+..E.E....
+Time: 0.124
+There were 2 failures:
+1) testMerge(TestListExamples)
+org.junit.runners.model.TestTimedOutException: test timed out after 100 milliseconds
+	at app//ListExamples.merge(ListExamples.java:43)
+	at app//TestListExamples.testMerge(TestListExamples.java:65)
+	at java.base@18.0.1.1/java.lang.invoke.LambdaForm$DMH/0x0000000800c12400.invokeVirtual(LambdaForm$DMH)
+	at java.base@18.0.1.1/java.lang.invoke.LambdaForm$MH/0x0000000800c13000.invoke(LambdaForm$MH)
+	at java.base@18.0.1.1/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+2) filter_test(TestListExamples)
+arrays first differed at element [0]; expected:<[test on]> but was:<[rn test]>
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)
+	at org.junit.Assert.internalArrayEquals(Assert.java:534)
+	at org.junit.Assert.assertArrayEquals(Assert.java:285)
+	at org.junit.Assert.assertArrayEquals(Assert.java:300)
+	at TestListExamples.filter_test(TestListExamples.java:21)
+	... 9 trimmed
+Caused by: org.junit.ComparisonFailure: expected:<[test on]> but was:<[rn test]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at org.junit.internal.ExactComparisonCriteria.assertElementsEqual(ExactComparisonCriteria.java:8)
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)
+	... 15 more
 
-OK (7 tests)
+FAILURES!!!
+Tests run: 7,  Failures: 2
 
